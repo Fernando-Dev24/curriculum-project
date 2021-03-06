@@ -132,8 +132,14 @@ img {
 }
 .aside .website {font-weight: bold;}
 .aside strong {font-weight: 600;}
+.aside .email:hover {text-decoration: underline;}
 /*-------------------------Skills section styles---------------------------*/
-.technologies {margin: 0 0 20px 0;}
+.skills small {
+   font-family: var(--font-regular);
+   color: rgba(255, 255, 255, 0.7);
+   font-size: 0.8rem;
+}
+.technologies {margin: 20px 0;}
 .technologies p {font-size: 1.1rem;;}
 .technologies span, .technologies a {
    font-family: var(--font-regular);
@@ -207,12 +213,10 @@ img {
 }
 /*-------------------------Footer section style---------------------------------*/
 .footer {
-   padding: 10px 40px;
+   margin: 0;
+   padding: 20px 0;
    font-family: var(--font-regular);
-   font-size: 0.8rem;
-   color: #FFF;
-   background: #272727;
-   z-index: 0;
+   font-size: 0.9rem;
 }
 /* Keyframes to animate the tecnology information */
 @keyframes show {
@@ -245,5 +249,5 @@ img {
 @media screen and (max-width: 400px) {
    .tech-info {font-size: 14px;}
 
-   .tech-close-icon img {max-width: 5vw;}
+   .tech-close-icon img {max-width: 6vw;}
 }
