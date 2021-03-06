@@ -112,7 +112,7 @@ img {
    flex-direction: column;
    justify-content: space-around;
    align-items: flex-start;
-   padding: 20px 35px;
+   padding: 20px 40px;
    background: var(--asideColor);
    color: #fff;
 }
@@ -236,6 +236,7 @@ img {
       grid-template-areas: "main"
                            "aside";
    }
+   .main, .aside {padding: 20px 30px;}
    .aside div {margin: 20px 0;}
    .tech-close-icon img {max-width: 3vw;}
 }
