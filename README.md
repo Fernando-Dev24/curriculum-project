@@ -8,4 +8,6 @@ This website resumé version is looking for show to people what I know, and what
 
 I hope you like :D
 
+[You could watch the website online here](https://fernandodev-cv.netlify.app)
+
 License Script: I uploaded this resumé webpage public because, it will help you. You could modify anything you want and help me with issues this version should have.
