@@ -245,6 +245,7 @@ img {
 /* Media querie for measure about 800px to change the view of the page and show: first the main section and then the aside one. */
 @media screen and (max-width: 900px) {
    html {font-size: 14px;}
+   body {overflow: hidden;}
    .container {
       margin: 0 auto;
       grid-template-columns: 100% 100%;
