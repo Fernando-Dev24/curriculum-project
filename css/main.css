@@ -38,13 +38,7 @@ html, body {
 }
 button {outline: none;}
 a {color: #FFF; text-decoration: none;}
-img {
-   width: 75px;
-   height: auto;
-   vertical-align: top;
-   border-radius: 50%;
-   float: left;
-}
+
 .container {
    position: relative;
    margin: 40px 70px;
@@ -60,15 +54,30 @@ img {
    border-radius: 10px 0 0 10px;
 }
 /* Header */
-.name {
+.header {
    display: flex;
+   justify-content: space-between;
    align-items: center;
    margin-bottom: 20px;
 }
-.name div {margin-left: 20px;}
+
+.name {
+   display: flex;
+   align-items: center;
+}
+
+.name article {margin-left: 20px;}
+
+.name img {
+   width: 75px;
+   height: auto;
+   vertical-align: top;
+   border-radius: 50%;
+}
+
 .name h1 {
    font-family: var(--font-semiBold);
-   font-size: 1.6rem;
+   font-size: 2rem;
 }
 .name h3 {
    text-transform: uppercase;
@@ -76,6 +85,28 @@ img {
    font-size: 0.8rem;
    color: #686868b3;
 }
+
+.lang-buttons a {
+   display: inline-block;
+   margin-right: 10px;
+   padding: 10px;
+   font-family: var(--font-regular);
+   font-size: 1rem;
+   border-radius: 3px;
+   color: #000;
+   background: #e4e4e4;
+}
+
+.lang-buttons a:hover {
+   transform: translateY(-5px);
+   transition: 300ms;
+}
+
+.lang-buttons .active {
+   background: var(--asideColor);
+   color: #FFF;
+}
+
 /* Employement History */
 .employement {margin-bottom: 40px;}
 .employement h2, .educational h2, .certifications h2 {
@@ -131,7 +162,7 @@ img {
    font-size: 1.7rem;
    padding-bottom: 10px;
 }
-.aside p, i {
+.aside p, .aside i, .aside address {
    padding-bottom: 5px;
    line-height: 27px;
    font-family: var(--font-regular);
@@ -269,12 +300,24 @@ img {
    }
 }
 @media screen and (max-width: 600px) {
+   .lang-buttons a {
+      padding: 6px;
+      font-size: 0.8rem;
+   }
+
    .tech-close-icon img {max-width: 5vw;
    }
 
    .tech-info {font-size: 0.9rem;}
 }
 @media screen and (max-width: 400px) {
+   .header {
+      flex-direction: column;
+      align-items: flex-start;
+   }
+
+   .lang-buttons {align-self: flex-start; margin-top: 3vh;}
+   
    .tech-info {font-size: 14px;}
 
    .tech-close-icon img {max-width: 6vw;}
