@@ -97,11 +97,18 @@ const init = () => {
          setTimeout(() => {techInfo.classList.remove('tech-active');}, 700);
       });
    }
+
+   const showYear = () => {
+      const date = new Date;
+      document.getElementById('year').textContent = date.getFullYear();
+   }
+
    /* Add a event handler to the link */
    techLinks[0].addEventListener('click', infoHTML);
    techLinks[1].addEventListener('click', infoCSS);
    techLinks[2].addEventListener('click', infoBootstrap)
    techLinks[3].addEventListener('click', infoJavascript);
+   showYear();
 };
 
 window.onload = init;
